@@ -1,0 +1,19 @@
+{
+  "schema_version": "1.0",
+  "actors": [
+    {
+      "id": "fixture-bot",
+      "display_name": "OneCompany bounded fixture-only GitHub Actions bot",
+      "enabled": true,
+      "configured": true,
+      "cost_class": "FREE_ALLOWANCE",
+      "execution_modes": [
+        "github_action"
+      ],
+      "capabilities": [
+        "implementation"
+      ],
+      "may_independently_gate_own_material_authorship": false
+    }
+  ]
+}

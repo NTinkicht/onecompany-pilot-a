@@ -1,0 +1,25 @@
+{
+  "schema_version": "1.0",
+  "project": {
+    "name": "Disposable A4 pilot A",
+    "repository": "NTinkicht/onecompany-pilot-a",
+    "default_branch": "main",
+    "source_of_truth": "github",
+    "disposable_pilot": true
+  },
+  "autonomy": {
+    "level": "L2",
+    "continue_when_ready_work_exists": false,
+    "human_must_approve_autonomy_increase": true
+  },
+  "delivery": {
+    "single_canonical_stream_per_work_unit": true,
+    "require_exact_head_gate": true,
+    "require_independent_non_author_review": true
+  },
+  "safety": {
+    "emergency_stop": false,
+    "fail_closed_on_ambiguous_authority": true,
+    "external_side_effects_require_idempotency": true
+  }
+}
