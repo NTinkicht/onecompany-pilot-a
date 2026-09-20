@@ -7,3 +7,5 @@ This is an independently authorized disposable public repository, not customer c
 Before running, verify local policies, default-branch SHA and exact reviewed worker/workflow Git blobs; configure repo vars ONECOMPANY_A4_PRODUCER_ENABLED=true, ONECOMPANY_A4_APPROVED_DISPATCHER=NTinkicht, ONECOMPANY_A4_LOGICAL_ACTOR=fixture-bot. The variable is default-off and must be intentionally enabled by the owner after installation review.
 
 Trigger repository_dispatch event onecompany.a4-produce with client_payload {"work_unit":"WU-A","actor":"fixture-bot"}. Capture real Actions run ID. After PR creation dispatch .github/workflows/onecompany-a4-fixture-validation.yml against exact PR branch SHA and preserve run IDs. This README is not evidence of a completed pilot.
+
+STOP: Actions variable ONECOMPANY_EMERGENCY_STOP must remain absent/false to allow new producer jobs; true or unrecognized value skips before runner allocation. Cancel existing live job in Actions separately. Keep producer flag OFF until exact-head source review and run preflight.
